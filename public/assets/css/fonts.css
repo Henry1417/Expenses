@@ -1,0 +1,58 @@
+
+@font-face {
+    font-family: 'Verb_Regular';
+    src: url('../fonts/Verb-Regular.woff') format('woff');
+    src: local('☺'),
+    url('../fonts/Verb-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Verb_Regular_Bold';
+    src: url('../fonts/verb-regular-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Oceania-Regular';
+    src: url('../fonts/Oceania-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_longview';
+    src: local('☺'),
+    url('../fonts/longview.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Optima';
+    src: local('☺'),
+    url('../fonts/Optima.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-CondensedBold';
+    src: local('☺'),
+    url('../fonts/HelveticaNeue-CondensedBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Open_Sans';
+    src: local('☺'),
+    url('../fonts/open-sans-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
