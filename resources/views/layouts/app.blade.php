@@ -73,7 +73,7 @@
 
     <footer>
         <div class="container">
-            PageLab Todos los derechos Reservados
+            Copyright © 2016 PageLab
         </div>
     </footer>
 

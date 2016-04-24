@@ -20,13 +20,11 @@ class CreateAccountCustomerTable extends Migration
             $table->integer('account_id')->unsigned();;
             $table->integer('customer_id')->unsigned();;
             $table->timestamps();
-
             $table->foreign('customer_id')
                 ->references('id')
                 ->on('customers')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
-
             $table->foreign('account_id')
                 ->references('id')
                 ->on('accounts')

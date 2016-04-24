@@ -18,11 +18,10 @@ class CreateTransactionsTable extends Migration
             $table->increments('id');
             $table->string('uuid', 128)->unique();
             $table->string('description', 256);
-            $table->decimal('amount', 15,5);
-            $table->decimal('balance', 15,5);
+            $table->decimal('amount', 15,2);
+            $table->decimal('balance', 15,2);
             $table->enum('type', ['input', 'output']);
             $table->timestamps();
-
             $table->index('id');
 
             $table->integer('user_id')->unsigned();
