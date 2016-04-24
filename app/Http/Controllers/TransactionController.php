@@ -121,7 +121,7 @@ class TransactionController extends Controller
      */
     public function show($uuid)
     {
-        $transaction = $this->transactions->forUUID($uuid);
+        $transaction = $this->transactions->findBy('uuid', $uuid);
 
         return view('transactions.show')->with(['transaction' => $transaction]);
     }

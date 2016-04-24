@@ -15,11 +15,23 @@ class TransactionRepository
     /**
      * Get a transaction by specified uuid
      *
-     * @param string $uuid
+     * @param string $id
      * @return Transaction
      */
-    public function forUUID($uuid){
-        return Transaction::where('uuid', $uuid)->first();
+    public function find($id){
+        return Transaction::find($id);
+    }
+
+    /**
+     * Get a transaction by specified uuid
+     *
+     * @param string $attribute
+     * @param string $value
+     *
+     * @return Transaction
+     */
+    public function findBy($attribute, $value){
+        return Transaction::where($attribute, $value)->first();
     }
 
     /**
@@ -113,9 +125,7 @@ class TransactionRepository
      * @return mixed
      */
     public function getUUID(){
-
         $pattern = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";
-
         $uuid = preg_replace_callback('/[xy]/', function($matches){
             $r = random_int(0,16) | 0;
             // $v = $matches[0] == 'x' ? $r : ($r&0x3|0x8);

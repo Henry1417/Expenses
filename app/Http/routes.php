@@ -11,17 +11,11 @@
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-
-
-});
-
 Route::group(['middleware' => 'web'], function () {
 
     Route::auth();
 
     Route::get('/', 'HomeController@index');
-    
     Route::get('/home', 'HomeController@index');
 
     Route::group([
@@ -33,6 +27,5 @@ Route::group(['middleware' => 'web'], function () {
         $router->post('store', ['as' => 'store', 'uses' => 'TransactionController@store']);
         $router->get('show/{uuid}', ['as' => 'show', 'uses' => 'TransactionController@show']);
     });
-
-
+    
 });
