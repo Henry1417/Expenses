@@ -22,9 +22,10 @@ Route::group(['middleware' => 'web'], function () {
         'as'        => 'transactions.',
         'prefix'    => 'transactions',
     ], function($router) {
-        $router->get('/', ['as' => 'index', 'uses' => 'TransactionController@index']);
-        $router->get('create', ['as' => 'create', 'uses' => 'TransactionController@create']);
-        $router->post('store', ['as' => 'store', 'uses' => 'TransactionController@store']);
+        $router->get('/',       ['as' => 'index', 'uses' => 'TransactionController@index']);
+        $router->get('create',  ['as' => 'create', 'uses' => 'TransactionController@create']);
+        $router->post('store',  ['as' => 'store', 'uses' => 'TransactionController@store']);
+        $router->get('edit/{uuid}', ['as' => 'edit', 'uses' => 'TransactionController@edit']);
         $router->get('show/{uuid}', ['as' => 'show', 'uses' => 'TransactionController@show']);
     });
     

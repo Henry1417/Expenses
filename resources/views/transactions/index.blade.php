@@ -82,7 +82,7 @@
                                     <tr>
                                         <td>{{$transaction->id}}</td>
                                         <td>
-                                            <a href="{{url('transactions/show',$transaction->uuid)}}">{{ $transaction->uuid}}</a>
+                                            <a href="{{url('transactions/edit', $transaction->uuid)}}">{{ $transaction->uuid}}</a>
                                         </td>
                                         <td>{{$transaction->account->name}}</td>
                                         <td>{{ ucfirst($transaction->description)}}</td>

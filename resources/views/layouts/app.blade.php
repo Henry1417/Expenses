@@ -9,9 +9,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'> -->
     <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
     <link href="/assets/css/font-awesome/4.4.0/css/font-awesome.css" rel='stylesheet' type='text/css'>
     <link href="/assets/css/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet" type='text/css'>
-    <link href="/assets/css/fonts.css" rel="stylesheet" type='text/css'>
     <link href="/assets/css/layout.css" rel="stylesheet" type='text/css'>
     <link href="/assets/css/app.css" rel="stylesheet" type='text/css'>
 

@@ -51,7 +51,6 @@ class TransactionController extends Controller
      */
     public function index(Request $request)
     {
-
         $account = null;
         $balance = 0;
         
@@ -113,28 +112,30 @@ class TransactionController extends Controller
         ]);
     }
 
-    
+
     /**
      * Display the specified resource.
      *
-     * @param  string  $uuid
+     * @param  string $uuid
+     * @return $this
      */
     public function show($uuid)
     {
         $transaction = $this->transactions->findBy('uuid', $uuid);
-
         return view('transactions.show')->with(['transaction' => $transaction]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int  $uuid
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($uuid)
     {
-        //
+        $transaction = $this->transactions->findBy('uuid', $uuid);
+        
+        return view('transactions.edit')->with(['transaction' => $transaction]);
     }
 
     /**
